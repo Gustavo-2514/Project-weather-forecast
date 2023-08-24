@@ -1,0 +1,109 @@
+body {
+  background-color: #001231;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+.form {
+  background: linear-gradient(150deg, #4ee6bc, #3a919a, #596994, #646896);
+  width: 350px;
+  height: 100px;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 100px auto;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  transition: ;
+}
+
+.containerWeather {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.cointainercityName{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+
+#cityName {
+  font-size: 23px;
+  /* border: 1px solid red; */
+  
+}
+
+#weather {
+  color: aliceblue;
+  font-size: 55px;
+  /* border: 1px solid red; */
+  margin:5px ;
+}
+
+img {
+    /* border: 1px solid red; */
+    margin: auto;
+    margin:5px ;
+
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+#weatherDescription {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.containerIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  /* border: 1px solid red; */
+}
+
+.div-inputBtn {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* border: 1px solid red; */
+}
+
+.div-inputBtn input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: aliceblue;
+  color: black;
+}
+
+.div-inputBtn button {
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.div-inputBtn button:hover {
+  background-color: #4ee6bb88;
+  color: white;
+}
+
+.error{
+    color: rgba(255, 0, 0, 0.87); 
+    text-align: center;
+    font-size: 12px;
+}
+
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/61d6bdfb11.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="./index.js" defer></script>
+    <title>Clima</title>
+  </head>
+  <body>
+    <div class="form">
+      <div class="containerWeather">
+        <div class="cointainercityName">
+          <span class="material-symbols-outlined"> location_on </span>
+          <span id="cityName"></span>
+          <img id="iconFlag" src="" />
+        </div>
+        <h2 id="weather"></h2>
+        <img id="img-icon" src="#" alt="" />
+        <span id="weatherDescription"></span>
+      </div>
+      <div class="containerIcons">
+        <span id="humidityIcon" class=""> </span>
+        <span id="humidity"></span>
+        <span id="division">Confira o clima de um Estado:</span>
+        <span id="airIcon" class=""></span>
+        <span id="air"></span>
+      </div>
+      <div class="div-inputBtn">
+        <input
+          type="text"
+          name="searchInput"
+          id="searchInput"
+          placeholder="Digite o nome do Estado"
+        />
+        <button id="searchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <span class="error"></span>
+    </div>
+  </body>
+</html>
