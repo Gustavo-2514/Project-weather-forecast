@@ -31,19 +31,14 @@ async function getCity() {
 async function showCity(){
   document.querySelector('.error').textContent = ''
 try {
-  const test = document.querySelector('.form')
-  test.style.height = '400px'
-  test.style.transition = '0.5s'
+  const containerForm = document.querySelector('.form')
+  containerForm.style.height = '400px'
+  containerForm.style.transition = '0.5s'
   const cityData = await getCity()
 
 
   cityName.textContent = ` ${cityData.name} `
   iconFlag.setAttribute('src', `https://flagsapi.com/${cityData.sys.country}/flat/32.png`)
-  
-  // get na api de flags/ trocar pelo BR, icone de local do lado do nome da cidade, fazer rapido e já ir pra uma aula
-  // get na api de flags/ trocar pelo BR, icone de local do lado do nome da cidade, fazer rapido e já ir pra uma aula
-  // get na api de flags/ trocar pelo BR, icone de local do lado do nome da cidade, fazer rapido e já ir pra uma aula
-  // get na api de flags/ trocar pelo BR, icone de local do lado do nome da cidade, fazer rapido e já ir pra uma aula
   weather.textContent = `${Math.floor(cityData.main.temp)}°C`
   weatherDescription.textContent = `${cityData.weather[0].description}`
   imgIcon.setAttribute('src', `https://openweathermap.org/img/wn/${cityData.weather[0].icon}@2x.png`)
