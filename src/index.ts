@@ -31,10 +31,10 @@ async function getCity() {
 async function showCity(){
   document.querySelector('.error').textContent = ''
 try {
+  const cityData = await getCity()
   const containerForm = document.querySelector('.form')
   containerForm.style.height = '400px'
-  containerForm.style.transition = '0.5s'
-  const cityData = await getCity()
+  containerForm.style.transition = '0.3s'
 
 
   cityName.textContent = ` ${cityData.name} `

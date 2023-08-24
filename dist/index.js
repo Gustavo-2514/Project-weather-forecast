@@ -38,10 +38,10 @@ function showCity() {
     return __awaiter(this, void 0, void 0, function* () {
         document.querySelector('.error').textContent = '';
         try {
+            const cityData = yield getCity();
             const containerForm = document.querySelector('.form');
             containerForm.style.height = '400px';
-            containerForm.style.transition = '0.5s';
-            const cityData = yield getCity();
+            containerForm.style.transition = '0.3s';
             cityName.textContent = ` ${cityData.name} `;
             iconFlag.setAttribute('src', `https://flagsapi.com/${cityData.sys.country}/flat/32.png`);
             weather.textContent = `${Math.floor(cityData.main.temp)}°C`;
